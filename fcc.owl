@@ -1,0 +1,647 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Cursa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Cursa">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Es_cursada_por"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Enseña -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Enseña">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Es_enseñada_por"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Es_cursada_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Es_cursada_por">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Es_enseñada_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Es_enseñada_por">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Requiere -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Requiere">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Cargo_administrativo_profesor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Cargo_administrativo_profesor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#profesor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Creditos_materia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Creditos_materia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Edad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Edad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#persona"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Fecha_ingreso -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Fecha_ingreso">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#alumno"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Horario_materia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Horario_materia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Horas_laboratorio_materia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Horas_laboratorio_materia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Horas_teoria_materia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Horas_teoria_materia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Horas_trabajo_materia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Horas_trabajo_materia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Nombre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#persona"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Nombre_materia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Nombre_materia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Periodo_materia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Periodo_materia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Primer_contrato -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Primer_contrato">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#profesor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Semestre_alumno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Semestre_alumno">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#alumno"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Telefono -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Telefono">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#persona"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Tipo_optativa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Tipo_optativa">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Optativa"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#area -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#area">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Optativa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Optativa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_formativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#alumno -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#alumno">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#persona"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Cursa"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Es_enseñada_por"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#profesor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Requiere"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Es_cursada_por"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#alumno"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_basica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_basica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_formativa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_formativa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#persona"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#profesor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#profesor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#persona"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Enseña"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_basica"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lunes-Viernes 11:00-1:00</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matematicas Elementales</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Periodo_materia>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias básicas</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_basica"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Martes-Viernes 12:00-2:00</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Álgebra Superior</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Periodo_materia>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias básicas</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_007">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_basica"/>
+        <Requiere rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_002"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jueves-Viernes 1-2pm</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calculo Diferencial</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Periodo_materia>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias básicas</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_250 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_250">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_formativa"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lunes y Martes</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circuitos logicos</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">7</Periodo_materia>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias básicas</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_251 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_251">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_formativa"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probabilidad y Estadistica</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Periodo_materia>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias básicas</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_252 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_252">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_formativa"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sistemas Operativos I</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Periodo_materia>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias de la computación</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_253 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_253">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_formativa"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Programacion Concurrente y Pararlela</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Periodo_materia>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias de la computación</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_254 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_254">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_formativa"/>
+        <Requiere rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_252"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sistemas Operativos II</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">7</Periodo_materia>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias de la computación</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_258 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_258">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_formativa"/>
+        <Requiere rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_261"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inteligencia Artificial</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">7</Periodo_materia>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias de la computación</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_261 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_261">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_formativa"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graficacion</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Periodo_materia>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tecnología</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_262 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_262">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_formativa"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bases de Datos</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Periodo_materia>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tecnología</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_600 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_600">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Optativa"/>
+        <Requiere rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_262"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Semantica</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">8</Periodo_materia>
+        <Tipo_optativa>Disciplinaria</Tipo_optativa>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optativa</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_609 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_609">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Optativa"/>
+        <Requiere rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_261"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animacion por Computadora</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">8</Periodo_materia>
+        <Tipo_optativa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disciplinaria</Tipo_optativa>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optativa</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_610 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_610">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Optativa"/>
+        <Requiere rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_258"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aprendizaje Automatico y Heuristicas</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">8</Periodo_materia>
+        <Tipo_optativa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disciplinaria</Tipo_optativa>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optativa</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_700 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_700">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Optativa"/>
+        <Es_cursada_por rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#00000000"/>
+        <Es_enseñada_por rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#P0000000"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aplicaciones WEB</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9</Periodo_materia>
+        <Tipo_optativa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disciplinaria</Tipo_optativa>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optativa</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#FGUS_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#FGUS_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_basica"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lunes y Jueves</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formacion Humana y Social</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Periodo_materia>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formación general</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#FGUS_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#FGUS_002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_basica"/>
+        <Requiere rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#FGUS_001"/>
+        <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</Creditos_materia>
+        <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miercoles y martes</Horario_materia>
+        <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_laboratorio_materia>
+        <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Horas_teoria_materia>
+        <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+        <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DHPC</Nombre_materia>
+        <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Periodo_materia>
+        <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formación general</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#P0000000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#P0000000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#profesor"/>
+        <Enseña rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_700"/>
+        <Cargo_administrativo_profesor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NA</Cargo_administrativo_profesor>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">45</Edad>
+        <Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gabriel Manzano Perez</Nombre>
+        <Primer_contrato rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1980-03-23T10:20:15</Primer_contrato>
+        <Telefono rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2212906756</Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#00000000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#00000000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#alumno"/>
+        <Cursa rdf:resource="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_700"/>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">19</Edad>
+        <Fecha_ingreso rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1980-03-23T10:20:15</Fecha_ingreso>
+        <Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juan Gonzalez Zepeda</Nombre>
+        <Semestre_alumno rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9</Semestre_alumno>
+        <Telefono rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2212090989</Telefono>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

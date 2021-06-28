@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1282</width>
+    <height>749</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Ontologia de Materias</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="eqtiqueta_consulta">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Consulta:</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="consulta">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>60</y>
+      <width>861</width>
+      <height>261</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="etiqueta_resultado">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>330</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Resultado:</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="resultado">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>350</y>
+      <width>861</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_iniciar">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>630</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Iniciar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_acciones_profesor">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>70</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Acciones Profesor</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_acciones_materia_basica">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>150</y>
+      <width>261</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Acciones Materia Basica</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_acciones_alumno">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>110</y>
+      <width>261</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Acciones alumno</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_acciones_materia_formativa">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>190</y>
+      <width>261</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Acciones Materia Formativa</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_principal">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>640</y>
+      <width>181</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_limpiar">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>630</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limpiar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_grafo">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>630</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ver Grafo</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1282</width>
+     <height>34</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

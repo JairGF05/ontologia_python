@@ -1,0 +1,424 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42"
+         xmlns="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42"/>
+
+<owl:ObjectProperty rdf:about="#Cursa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <owl:inverseOf rdf:resource="#Es_cursada_por"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Es_cursada_por">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Enseña">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <owl:inverseOf rdf:resource="#Es_enseñada_por"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Es_enseñada_por">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Requiere">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#Cargo_administrativo_profesor">
+  <rdfs:domain rdf:resource="#profesor"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Correo">
+  <rdfs:domain rdf:resource="#persona"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Creditos_materia">
+  <rdfs:domain rdf:resource="#materia"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Edad">
+  <rdfs:domain rdf:resource="#persona"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Fecha_ingreso">
+  <rdfs:domain rdf:resource="#alumno"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Horario_materia">
+  <rdfs:domain rdf:resource="#materia"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Horas_laboratorio_materia">
+  <rdfs:domain rdf:resource="#materia"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Horas_teoria_materia">
+  <rdfs:domain rdf:resource="#materia"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Horas_trabajo_materia">
+  <rdfs:domain rdf:resource="#materia"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Nombre">
+  <rdfs:domain rdf:resource="#persona"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Nombre_materia">
+  <rdfs:domain rdf:resource="#materia"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Periodo_materia">
+  <rdfs:domain rdf:resource="#materia"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Primer_contrato">
+  <rdfs:domain rdf:resource="#profesor"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Semestre_alumno">
+  <rdfs:domain rdf:resource="#alumno"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Telefono">
+  <rdfs:domain rdf:resource="#persona"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#area">
+  <rdfs:domain rdf:resource="#materia"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#profesor">
+  <rdfs:subClassOf rdf:resource="#persona"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#Enseña"/>
+      <owl:onClass rdf:resource="#materia"/>
+      <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#persona"/>
+
+<owl:Class rdf:about="#materia">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#Es_enseñada_por"/>
+      <owl:someValuesFrom rdf:resource="#profesor"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#Requiere"/>
+      <owl:someValuesFrom rdf:resource="#materia"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#Es_cursada_por"/>
+      <owl:onClass rdf:resource="#alumno"/>
+      <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#alumno">
+  <rdfs:subClassOf rdf:resource="#persona"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#Cursa"/>
+      <owl:onClass rdf:resource="#materia"/>
+      <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#Optativas_complementarias">
+  <rdfs:subClassOf rdf:resource="#materia_formativa"/>
+</owl:Class>
+
+<owl:Class rdf:about="#materia_formativa">
+  <rdfs:subClassOf rdf:resource="#materia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Optativas_disciplinarias">
+  <rdfs:subClassOf rdf:resource="#materia_formativa"/>
+</owl:Class>
+
+<owl:Class rdf:about="#materia_basica">
+  <rdfs:subClassOf rdf:resource="#materia"/>
+</owl:Class>
+
+<materia_basica rdf:about="#CCOS_002">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lunes-Viernes 11:00-1:00</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matematicas Elementales</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias básicas</area>
+</materia_basica>
+
+<materia_basica rdf:about="#CCOS_003">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Martes-Viernes 12:00-2:00</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Álgebra Superior</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias básicas</area>
+</materia_basica>
+
+<materia_basica rdf:about="#CCOS_007">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Requiere rdf:resource="#CCOS_002"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jueves-Viernes 1-2pm</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calculo Diferencial</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias básicas</area>
+</materia_basica>
+
+<materia_formativa rdf:about="#CCOS_250">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lunes y Martes</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circuitos logicos</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">7</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias básicas</area>
+</materia_formativa>
+
+<materia_formativa rdf:about="#CCOS_251">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probabilidad y Estadistica</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias básicas</area>
+</materia_formativa>
+
+<materia_formativa rdf:about="#CCOS_252">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sistemas Operativos I</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias de la computación</area>
+</materia_formativa>
+
+<materia_formativa rdf:about="#CCOS_253">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Programacion Concurrente y Pararlela</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias de la computación</area>
+</materia_formativa>
+
+<materia_formativa rdf:about="#CCOS_254">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Requiere rdf:resource="#CCOS_252"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sistemas Operativos II</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">7</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias de la computación</area>
+</materia_formativa>
+
+<materia_formativa rdf:about="#CCOS_258">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Requiere rdf:resource="#CCOS_261"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inteligencia Artificial</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">7</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencias de la computación</area>
+</materia_formativa>
+
+<materia_formativa rdf:about="#CCOS_261">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graficacion</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tecnología</area>
+</materia_formativa>
+
+<materia_formativa rdf:about="#CCOS_262">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bases de Datos</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tecnología</area>
+</materia_formativa>
+
+<Optativas_disciplinarias rdf:about="#CCOS_600">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Requiere rdf:resource="#CCOS_262"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Semantica</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">8</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optativa</area>
+</Optativas_disciplinarias>
+
+<Optativas_disciplinarias rdf:about="#CCOS_609">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Requiere rdf:resource="#CCOS_261"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animacion por Computadora</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">8</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optativa</area>
+</Optativas_disciplinarias>
+
+<Optativas_disciplinarias rdf:about="#CCOS_610">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Requiere rdf:resource="#CCOS_258"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aprendizaje Automatico y Heuristicas</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">8</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optativa</area>
+</Optativas_disciplinarias>
+
+<Optativas_disciplinarias rdf:about="#CCOS_700">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Es_cursada_por rdf:resource="#00000000"/>
+  <Es_enseñada_por rdf:resource="#P0000000"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aplicaciones WEB</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optativa</area>
+</Optativas_disciplinarias>
+
+<alumno rdf:about="#00000000">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Cursa rdf:resource="#CCOS_700"/>
+  <Correo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">juango@gmail.com</Correo>
+  <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">19</Edad>
+  <Fecha_ingreso rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1980-03-23T10:20:15</Fecha_ingreso>
+  <Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juan Gonzalez Zepeda</Nombre>
+  <Semestre_alumno rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9</Semestre_alumno>
+  <Telefono rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2212090989</Telefono>
+</alumno>
+
+<profesor rdf:about="#P0000000">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Enseña rdf:resource="#CCOS_700"/>
+  <Cargo_administrativo_profesor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NA</Cargo_administrativo_profesor>
+  <Correo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gabrielmap@hotmail.com</Correo>
+  <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">45</Edad>
+  <Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gabriel Manzano Perez</Nombre>
+  <Primer_contrato rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1980-03-23T10:20:15</Primer_contrato>
+  <Telefono rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2212906756</Telefono>
+</profesor>
+
+<materia_basica rdf:about="#FGUS_001">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lunes y Jueves</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formacion Humana y Social</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formación general</area>
+</materia_basica>
+
+<materia_basica rdf:about="#FGUS_002">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Requiere rdf:resource="#FGUS_001"/>
+  <Creditos_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</Creditos_materia>
+  <Horario_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miercoles y martes</Horario_materia>
+  <Horas_laboratorio_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Horas_laboratorio_materia>
+  <Horas_teoria_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Horas_teoria_materia>
+  <Horas_trabajo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Horas_trabajo_materia>
+  <Nombre_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DHPC</Nombre_materia>
+  <Periodo_materia rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Periodo_materia>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formación general</area>
+</materia_basica>
+
+<alumno rdf:about="#alumno1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Correo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jairgf05@gmail.com</Correo>
+  <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</Edad>
+  <Fecha_ingreso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-05-30T00:00:00</Fecha_ingreso>
+  <Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jair GF</Nombre>
+  <Semestre_alumno rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Semestre_alumno>
+  <Telefono rdf:datatype="http://www.w3.org/2001/XMLSchema#string">555878745</Telefono>
+</alumno>
+
+
+</rdf:RDF>

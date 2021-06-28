@@ -1,0 +1,520 @@
+@prefix : <http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42> .
+
+<http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Cursa
+:Cursa rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf owl:topObjectProperty ;
+       owl:inverseOf :Es_cursada_por ;
+       rdf:type owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Enseña
+:Enseña rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf owl:topObjectProperty ;
+        owl:inverseOf :Es_enseñada_por ;
+        rdf:type owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Es_cursada_por
+:Es_cursada_por rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdf:type owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Es_enseñada_por
+:Es_enseñada_por rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdf:type owl:InverseFunctionalProperty .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Requiere
+:Requiere rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Cargo_administrativo_profesor
+:Cargo_administrativo_profesor rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf owl:topDataProperty ;
+                               rdfs:domain :profesor .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Creditos_materia
+:Creditos_materia rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :materia .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Edad
+:Edad rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:domain :persona .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Fecha_ingreso
+:Fecha_ingreso rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :alumno .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Horario_materia
+:Horario_materia rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :materia .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Horas_laboratorio_materia
+:Horas_laboratorio_materia rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf owl:topDataProperty ;
+                           rdfs:domain :materia .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Horas_teoria_materia
+:Horas_teoria_materia rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain :materia .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Horas_trabajo_materia
+:Horas_trabajo_materia rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
+                       rdfs:domain :materia .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Nombre
+:Nombre rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain :persona .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Nombre_materia
+:Nombre_materia rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :materia .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Periodo_materia
+:Periodo_materia rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :materia .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Primer_contrato
+:Primer_contrato rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :profesor .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Semestre_alumno
+:Semestre_alumno rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :alumno .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Telefono
+:Telefono rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :persona .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Tipo_optativa
+:Tipo_optativa rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :Optativa .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#area
+:area rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:domain :materia .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#correo
+:correo rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#Optativa
+:Optativa rdf:type owl:Class ;
+          rdfs:subClassOf :materia_formativa .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#alumno
+:alumno rdf:type owl:Class ;
+        rdfs:subClassOf :persona ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :Cursa ;
+                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :materia
+                        ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia
+:materia rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :Es_enseñada_por ;
+                           owl:someValuesFrom :profesor
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :Requiere ;
+                           owl:someValuesFrom :materia
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :Es_cursada_por ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :alumno
+                         ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_basica
+:materia_basica rdf:type owl:Class ;
+                rdfs:subClassOf :materia .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_formativa
+:materia_formativa rdf:type owl:Class ;
+                   rdfs:subClassOf :materia .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#persona
+:persona rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#profesor
+:profesor rdf:type owl:Class ;
+          rdfs:subClassOf :persona ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :Enseña ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :materia
+                          ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_002
+:CCOS_002 rdf:type owl:NamedIndividual ,
+                   :materia_basica ;
+          :Creditos_materia "6"^^xsd:positiveInteger ;
+          :Horario_materia "Lunes-Viernes 11:00-1:00"^^xsd:string ;
+          :Horas_laboratorio_materia "0"^^xsd:positiveInteger ;
+          :Horas_teoria_materia "5"^^xsd:positiveInteger ;
+          :Horas_trabajo_materia "0"^^xsd:positiveInteger ;
+          :Nombre_materia "Matematicas Elementales"^^xsd:string ;
+          :Periodo_materia "1"^^xsd:positiveInteger ;
+          :area "Ciencias básicas"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_003
+:CCOS_003 rdf:type owl:NamedIndividual ,
+                   :materia_basica ;
+          :Creditos_materia "6"^^xsd:positiveInteger ;
+          :Horario_materia "Martes-Viernes 12:00-2:00"^^xsd:string ;
+          :Horas_laboratorio_materia "0"^^xsd:positiveInteger ;
+          :Horas_teoria_materia "5"^^xsd:positiveInteger ;
+          :Horas_trabajo_materia "0"^^xsd:positiveInteger ;
+          :Nombre_materia "Álgebra Superior"^^xsd:string ;
+          :Periodo_materia "1"^^xsd:positiveInteger ;
+          :area "Ciencias básicas"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_250
+:CCOS_250 rdf:type owl:NamedIndividual ,
+                   :materia_formativa ;
+          :Creditos_materia "6"^^xsd:positiveInteger ;
+          :Horario_materia "Lunes y Martes"^^xsd:string ;
+          :Horas_laboratorio_materia "2"^^xsd:positiveInteger ;
+          :Horas_teoria_materia "3"^^xsd:positiveInteger ;
+          :Horas_trabajo_materia "0"^^xsd:positiveInteger ;
+          :Nombre_materia "Circuitos logicos"^^xsd:string ;
+          :Periodo_materia "7"^^xsd:positiveInteger ;
+          :area "Ciencias básicas"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_251
+:CCOS_251 rdf:type owl:NamedIndividual ,
+                   :materia_formativa ;
+          :Creditos_materia "6"^^xsd:positiveInteger ;
+          :Horario_materia "x"^^xsd:string ;
+          :Horas_laboratorio_materia "2"^^xsd:positiveInteger ;
+          :Horas_teoria_materia "3"^^xsd:positiveInteger ;
+          :Horas_trabajo_materia "0"^^xsd:positiveInteger ;
+          :Nombre_materia "Probabilidad y Estadistica"^^xsd:string ;
+          :Periodo_materia "5"^^xsd:positiveInteger ;
+          :area "Ciencias básicas"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_252
+:CCOS_252 rdf:type owl:NamedIndividual ,
+                   :materia_formativa ;
+          :Creditos_materia "6"^^xsd:positiveInteger ;
+          :Horario_materia "x"^^xsd:string ;
+          :Horas_laboratorio_materia "2"^^xsd:positiveInteger ;
+          :Horas_teoria_materia "3"^^xsd:positiveInteger ;
+          :Horas_trabajo_materia "0"^^xsd:positiveInteger ;
+          :Nombre_materia "Sistemas Operativos I"^^xsd:string ;
+          :Periodo_materia "5"^^xsd:positiveInteger ;
+          :area "Ciencias de la computación"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_253
+:CCOS_253 rdf:type owl:NamedIndividual ,
+                   :materia_formativa ;
+          :Creditos_materia "6"^^xsd:positiveInteger ;
+          :Horario_materia "x"^^xsd:string ;
+          :Horas_laboratorio_materia "2"^^xsd:positiveInteger ;
+          :Horas_teoria_materia "3"^^xsd:positiveInteger ;
+          :Horas_trabajo_materia "0"^^xsd:positiveInteger ;
+          :Nombre_materia "Programacion Concurrente y Pararlela"^^xsd:string ;
+          :Periodo_materia "6"^^xsd:positiveInteger ;
+          :area "Ciencias de la computación"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_254
+:CCOS_254 rdf:type owl:NamedIndividual ,
+                   :materia_formativa ;
+          :Requiere :CCOS_252 ;
+          :Creditos_materia "6"^^xsd:positiveInteger ;
+          :Horario_materia "x"^^xsd:string ;
+          :Horas_laboratorio_materia "2"^^xsd:positiveInteger ;
+          :Horas_teoria_materia "3"^^xsd:positiveInteger ;
+          :Horas_trabajo_materia "0"^^xsd:positiveInteger ;
+          :Nombre_materia "Sistemas Operativos II"^^xsd:string ;
+          :Periodo_materia "7"^^xsd:positiveInteger ;
+          :area "Ciencias de la computación"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_261
+:CCOS_261 rdf:type owl:NamedIndividual ,
+                   :materia_formativa ;
+          :Creditos_materia "6"^^xsd:positiveInteger ;
+          :Horario_materia "x"^^xsd:string ;
+          :Horas_laboratorio_materia "2"^^xsd:positiveInteger ;
+          :Horas_teoria_materia "3"^^xsd:positiveInteger ;
+          :Horas_trabajo_materia "0"^^xsd:positiveInteger ;
+          :Nombre_materia "Graficacion"^^xsd:string ;
+          :Periodo_materia "6"^^xsd:positiveInteger ;
+          :area "Tecnología"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_600
+:CCOS_600 rdf:type owl:NamedIndividual ,
+                   :Optativa ;
+          :Creditos_materia "6"^^xsd:positiveInteger ;
+          :Horario_materia "x"^^xsd:string ;
+          :Horas_laboratorio_materia "2"^^xsd:positiveInteger ;
+          :Horas_teoria_materia "3"^^xsd:positiveInteger ;
+          :Horas_trabajo_materia "0"^^xsd:positiveInteger ;
+          :Nombre_materia "Web Semantica"^^xsd:string ;
+          :Periodo_materia "8"^^xsd:positiveInteger ;
+          :Tipo_optativa "Disciplinaria" ;
+          :area "Optativa"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_609
+:CCOS_609 rdf:type owl:NamedIndividual ,
+                   :Optativa ;
+          :Requiere :CCOS_261 ;
+          :Creditos_materia "6"^^xsd:positiveInteger ;
+          :Horario_materia "x"^^xsd:string ;
+          :Horas_laboratorio_materia "4"^^xsd:positiveInteger ;
+          :Horas_teoria_materia "1"^^xsd:positiveInteger ;
+          :Horas_trabajo_materia "0"^^xsd:positiveInteger ;
+          :Nombre_materia "Animacion por Computadora"^^xsd:string ;
+          :Periodo_materia "8"^^xsd:positiveInteger ;
+          :Tipo_optativa "Disciplinaria"^^xsd:string ;
+          :area "Optativa"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_610
+:CCOS_610 rdf:type owl:NamedIndividual ,
+                   :Optativa ;
+          :Creditos_materia "6"^^xsd:positiveInteger ;
+          :Horario_materia "X"^^xsd:string ;
+          :Horas_laboratorio_materia "2"^^xsd:positiveInteger ;
+          :Horas_teoria_materia "3"^^xsd:positiveInteger ;
+          :Horas_trabajo_materia "0"^^xsd:positiveInteger ;
+          :Nombre_materia "Aprendizaje Automatico y Heuristicas"^^xsd:string ;
+          :Periodo_materia "8"^^xsd:positiveInteger ;
+          :Tipo_optativa "Disciplinaria"^^xsd:string ;
+          :area "Optativa"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#CCOS_700
+:CCOS_700 rdf:type owl:NamedIndividual ,
+                   :Optativa ;
+          :Es_cursada_por <http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#00000000> ;
+          :Es_enseñada_por :P0000000 ;
+          :Creditos_materia "6"^^xsd:positiveInteger ;
+          :Horario_materia "x"^^xsd:string ;
+          :Horas_laboratorio_materia "4"^^xsd:positiveInteger ;
+          :Horas_teoria_materia "1"^^xsd:positiveInteger ;
+          :Horas_trabajo_materia "0"^^xsd:positiveInteger ;
+          :Nombre_materia "Aplicaciones WEB"^^xsd:string ;
+          :Periodo_materia "9"^^xsd:positiveInteger ;
+          :Tipo_optativa "Disciplinaria"^^xsd:string ;
+          :area "Optativa"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#FGUS_001
+:FGUS_001 rdf:type owl:NamedIndividual ,
+                   :materia_basica ;
+          :Creditos_materia "4"^^xsd:positiveInteger ;
+          :Horario_materia "Lunes y Jueves"^^xsd:string ;
+          :Horas_laboratorio_materia "2"^^xsd:positiveInteger ;
+          :Horas_teoria_materia "2"^^xsd:positiveInteger ;
+          :Horas_trabajo_materia "0"^^xsd:positiveInteger ;
+          :Nombre_materia "Formacion Humana y Social"^^xsd:string ;
+          :Periodo_materia "1"^^xsd:positiveInteger ;
+          :area "Formación general"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#FGUS_002
+:FGUS_002 rdf:type owl:NamedIndividual ,
+                   :materia_basica ;
+          :Requiere :FGUS_001 ;
+          :Creditos_materia "4"^^xsd:positiveInteger ;
+          :Horario_materia "Miercoles y martes"^^xsd:string ;
+          :Horas_laboratorio_materia "3"^^xsd:positiveInteger ;
+          :Horas_teoria_materia "1"^^xsd:positiveInteger ;
+          :Horas_trabajo_materia "0"^^xsd:positiveInteger ;
+          :Nombre_materia "DHPC"^^xsd:string ;
+          :Periodo_materia "2"^^xsd:positiveInteger ;
+          :area "Formación general"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#P0000000
+:P0000000 rdf:type owl:NamedIndividual ,
+                   :profesor ;
+          :Enseña :CCOS_700 ;
+          :Cargo_administrativo_profesor "NA"^^xsd:string ;
+          :Edad "45"^^xsd:positiveInteger ;
+          :Nombre "Gabriel Manzano Perez"^^xsd:string ;
+          :Primer_contrato "1980-03-23T10:20:15"^^xsd:dateTime ;
+          :Telefono "2212906756"^^xsd:string ;
+          :correo "" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#alumno2
+:alumno2 rdf:type owl:NamedIndividual ,
+                  :alumno ;
+         :Edad 26 ;
+         :Fecha_ingreso "2021-02-15"^^xsd:string ;
+         :Nombre "Elon Musk"^^xsd:string ;
+         :Telefono "2225784125"^^xsd:string ;
+         :correo "elon@buap.com.mx"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#alumno3
+:alumno3 rdf:type owl:NamedIndividual ,
+                  :alumno ;
+         :Edad 45 ;
+         :Fecha_ingreso "2021-02-12"^^xsd:string ;
+         :Nombre "Gabriel Garcia "^^xsd:string ;
+         :Telefono "7778545665"^^xsd:string ;
+         :correo "gabriel@buap.com"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_basica1
+:materia_basica1 rdf:type owl:NamedIndividual ,
+                          :materia_basica ;
+                 :Es_enseñada_por :P0000000 ;
+                 :Creditos_materia 5 ;
+                 :Horario_materia "Lunes-Viernes"^^xsd:string ;
+                 :Horas_laboratorio_materia 4 ;
+                 :Horas_teoria_materia 5 ;
+                 :Horas_trabajo_materia 4 ;
+                 :Nombre_materia "Algebra"^^xsd:string ;
+                 :Periodo_materia 3 ;
+                 :area "Basica"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#materia_basica2
+:materia_basica2 rdf:type owl:NamedIndividual ,
+                          :materia_basica ;
+                 :Requiere :CCOS_002 ;
+                 :Creditos_materia "5"^^xsd:string ;
+                 :Horario_materia "lunes-viernes"^^xsd:string ;
+                 :Horas_laboratorio_materia "20"^^xsd:string ;
+                 :Horas_teoria_materia "20"^^xsd:string ;
+                 :Horas_trabajo_materia "50"^^xsd:string ;
+                 :Nombre_materia "Algebra lineal 2"^^xsd:string ;
+                 :Periodo_materia "5"^^xsd:string ;
+                 :area "Basica"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#optativa1
+:optativa1 rdf:type owl:NamedIndividual ,
+                    :Optativa ;
+           :Es_cursada_por :alumno2 ;
+           :Creditos_materia "4"^^xsd:string ;
+           :Horario_materia "lunes-viernes"^^xsd:string ;
+           :Horas_laboratorio_materia "0"^^xsd:string ;
+           :Horas_teoria_materia "10"^^xsd:string ;
+           :Horas_trabajo_materia "120"^^xsd:string ;
+           :Nombre_materia "algebra3"^^xsd:string ;
+           :Periodo_materia "4"^^xsd:string ;
+           :area "Matematicas"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#optativa2
+:optativa2 rdf:type owl:NamedIndividual ,
+                    :Optativa ;
+           :Es_cursada_por :alumno2 ;
+           :Creditos_materia "2"^^xsd:string ;
+           :Horario_materia "lunes-viernes"^^xsd:string ;
+           :Horas_laboratorio_materia "6"^^xsd:string ;
+           :Horas_teoria_materia "5"^^xsd:string ;
+           :Horas_trabajo_materia "20"^^xsd:string ;
+           :Nombre_materia "Trigonometria"^^xsd:string ;
+           :Periodo_materia "5"^^xsd:string ;
+           :area "Basica"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#optativa3
+:optativa3 rdf:type owl:NamedIndividual ,
+                    :Optativa ;
+           :Es_cursada_por :alumno2 ;
+           :Es_enseñada_por :P0000000 ;
+           :Requiere :CCOS_002 ;
+           :Creditos_materia "5"^^xsd:string ;
+           :Horario_materia "lunes,miercoles, viernes"^^xsd:string ;
+           :Horas_laboratorio_materia "20"^^xsd:string ;
+           :Horas_teoria_materia "10"^^xsd:string ;
+           :Horas_trabajo_materia "50"^^xsd:string ;
+           :Nombre_materia "Electronica"^^xsd:string ;
+           :Periodo_materia "5"^^xsd:string ;
+           :area "Basica"^^xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#00000000
+<http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#00000000> rdf:type owl:NamedIndividual ,
+                                                                                           :alumno ;
+                                                                                  :Cursa :CCOS_700 ;
+                                                                                  :Edad "19"^^xsd:positiveInteger ;
+                                                                                  :Fecha_ingreso "1980-03-23T10:20:15"^^xsd:dateTime ;
+                                                                                  :Nombre "Juan Gonzalez Zepeda"^^xsd:string ;
+                                                                                  :Semestre_alumno "9"^^xsd:positiveInteger ;
+                                                                                  :Telefono "2212090989"^^xsd:string ;
+                                                                                  :correo "" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

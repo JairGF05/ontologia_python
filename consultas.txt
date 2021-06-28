@@ -1,0 +1,72 @@
+prefix ns0: <http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#>
+SELECT ?subject ?predicate ?object
+WHERE {
+  ?subject ?predicate ?object
+}
+
+prefix ns0: <http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#>
+SELECT DISTINCT ?Profesor ?Enseña
+WHERE {
+  ?x a ns0:profesor.
+  ?x ns0:Nombre ?Profesor.
+  ?x ns0:Enseña  ?Enseña.
+  {
+        SELECT ?tipo
+        where{
+            ?x a ns0:Optativa.
+      		?x ns0:Tipo_optativa ?tipo.
+      		VALUES ?tipo {"Disciplinaria"}
+        }
+    }
+}
+
+prefix ns0: <http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#>
+SELECT DISTINCT ?alumno ?Cursa
+WHERE {
+  ?x a ns0:alumno.
+  ?x ns0:Nombre ?alumno.
+  ?x ns0:Cursa  ?Cursa.
+  {
+        SELECT ?materia
+        where{
+            ?x a ns0:Optativa.
+      		?x ns0:Nombre_materia ?materia.
+        }
+    }
+}
+
+prefix ns0: <http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#>
+SELECT ?Horas_laboratorio ?Nombre_materia ?area 
+WHERE {
+  ?x ns0:Horas_laboratorio_materia  ?Horas_laboratorio.
+  ?x ns0:Nombre_materia  ?Nombre_materia.
+  ?x ns0:area  ?area .
+  VALUES ?area {"Ciencias básicas"}
+}
+
+                                SELECT ?area (SUM(?Horas_laboratorio) AS ?horas)
+                                WHERE {
+                                ?x ns0:area ?area.
+                                ?x ns0:Horas_laboratorio_materia  ?Horas_laboratorio.
+                                ?x ns0:Nombre_materia  ?Nombre_materia.
+                                VALUES ?area {'Ciencias básicas'}
+                                }
+                                GROUP BY ?area
+
+prefix ns0: <http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#>
+SELECT ?Nombre_materia ?Creditos ?Area 
+WHERE {
+  ?x ns0:Nombre_materia  ?Nombre_materia.
+  ?x ns0:Creditos_materia   ?Creditos.
+  ?x ns0:area  ?Area.
+  VALUES ?Area {"Tecnología"}
+}
+
+
+prefix ns0: <http://www.semanticweb.org/user/ontologies/2021/4/untitled-ontology-42#>
+SELECT  ?Nombre_materia ?Periodo
+WHERE {
+  ?x a ns0:materia_formativa.
+  ?x ns0:Nombre_materia ?Nombre_materia.
+  ?x ns0:Periodo_materia ?Periodo.
+}
